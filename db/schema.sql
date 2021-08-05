@@ -1,0 +1,24 @@
+DROP DATABASE IF EXISTS gurugainz_db;
+CREATE DATABASE gurugainz_db;
+
+use gurugainz_db;
+
+CREATE TABLE category (
+id INTEGER AUTO_INCREMENT PRIMARY KEY,
+name VARCHAR(30) NOT NULL UNIQUE
+);
+
+CREATE TABLE exercise (
+id INTEGER AUTO_INCREMENT PRIMARY KEY,
+name VARCHAR(50) NOT NULL,
+description TEXT NOT NULL,
+category_id INTEGER NOT NULL REFERENCES categories(id)
+);
+
+CREATE TABLE user (
+    id INTEGER AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(30) NOT NULL,
+    email VARCHAR(30) NOT NULL UNIQUE,
+    password VARCHAR(30) NOT NULL,
+    focus_group INTEGER NOT NULL REFERENCES categories(id)
+);
