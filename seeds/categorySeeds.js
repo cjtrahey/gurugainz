@@ -3,26 +3,29 @@ const { Category } = require('../models');
 
 const categoryData = [
     {
-        name: "Abs"
+        name: "Abs" //1
     },
     {
-        name: "Arms"
+        name: "Arms" //2
     },
     {
-        name: "Back"
+        name: "Back" //3
     },
     {
-        name: "Calves"
+        name: "Calves" //4
     },
     {
-        name: "Chest"
+        name: "Chest" //5
     },
     {
-        name: "Legs"
+        name: "Legs" //6
     },
     {
-        name: "Shoulders"
+        name: "Shoulders" //7
     },
+    {
+        name: "Cardio" //8
+    }
 ];
 const seedCategories = () => Category.bulkCreate(categoryData);
 module.exports = seedCategories

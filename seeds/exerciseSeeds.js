@@ -36,6 +36,11 @@ const exerciseData = [
     description: "Standing, hold dumbbells with your palms facing each other. Keeping your elbows and knees slightly bent, raise your arms out from your sides in wide arcs to about shoulder level. Slowly return to the starting position.",
     category_id: 7
     },
+    {
+    name: "Run 4 Miles",
+    description: "Maintain a steady pace and aim for an 8 minute mile.",
+    category_id: 8
+    }
 ];
 const seedExercises = () => Exercise.bulkCreate(exerciseData);
 module.exports = seedExercises;
