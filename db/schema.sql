@@ -12,7 +12,7 @@ CREATE TABLE exercise (
 id INTEGER AUTO_INCREMENT PRIMARY KEY,
 name VARCHAR(50) NOT NULL,
 description TEXT NOT NULL,
-category_id INTEGER NOT NULL REFERENCES categories(id)
+category_id INTEGER NOT NULL REFERENCES category(id)
 );
 
 CREATE TABLE user (
@@ -20,5 +20,5 @@ CREATE TABLE user (
     name VARCHAR(30) NOT NULL,
     email VARCHAR(30) NOT NULL UNIQUE,
     password VARCHAR(30) NOT NULL,
-    focus_group INTEGER NOT NULL REFERENCES categories(id)
+    focus_group INTEGER NOT NULL REFERENCES category(id)
 );

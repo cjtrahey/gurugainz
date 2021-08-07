@@ -23,6 +23,9 @@ const categoryData = [
     {
         name: "Shoulders" //7
     },
+    {
+        name: "Cardio" //8
+    }
 ];
 const seedCategories = () => Category.bulkCreate(categoryData);
 module.exports = seedCategories

@@ -1,10 +1,19 @@
 const router = require('express').Router();
-const { Category } = require('../../models');
+const { Category, Exercise } = require('../../models');
 
 router.get('/', async (req, res) => {
   const categoryData = await Category.findAll();
   res.status(200).json(categoryData)
 })
+
+router.get('/:id', async (req,res) =>{
+  const categoryData = await Category.findByPk(req.params.id,{
+    include: [{model: Exercise}]
+  })
+  
+  res.status(200).json(categoryData)
+});
+
 router.post('/',  async (req, res) => {
   try {
     const newcategory = await Category.create({
