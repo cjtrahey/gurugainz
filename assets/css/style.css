@@ -1,0 +1,11 @@
+* {
+    background-color: red;
+    background-image: url(/img/fyp_ss.png)
+}
+
+img {
+    display: flex;
+    max-width: 50%;
+    height: auto;
+    flex-wrap: wrap;
+}
