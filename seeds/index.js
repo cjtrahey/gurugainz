@@ -1,7 +1,7 @@
 const seedUsers = require('./userseeds');
 const seedExercises = require('./exerciseSeeds')
 const seedCategories = require('./categorySeeds');
-
+const seedRoutines = require('./routineSeeds')
 const sequelize = require('../config/connection');
 
 const seedAll = async () => {
@@ -13,6 +13,8 @@ const seedAll = async () => {
   console.log('\n----- USERS SEEDED -----\n');
   await seedExercises();
   console.log('\n----- EXERCISES SEEDED -----\n');
+  await seedRoutines();
+  console.log('\n----- ROUTINES SEEDED -----\n')
   console.log('\n----- SUCCESSFULLY SEEDED gurugainz_db! -----\n');
   process.exit(0);
 };
