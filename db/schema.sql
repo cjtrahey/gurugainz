@@ -22,3 +22,10 @@ CREATE TABLE user (
     password VARCHAR(30) NOT NULL,
     focus_group INTEGER NOT NULL REFERENCES category(id)
 );
+
+CREATE TABLE routine (
+    id INTEGER AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(30) NOT NULL,
+    creator_id INTEGER NOT NULL REFERENCES user(id),
+    body TEXT NOT NULL
+);
