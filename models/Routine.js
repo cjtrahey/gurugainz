@@ -33,7 +33,7 @@ Routine.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'routine',
+    modelName: 'Routine',
   }
 );
 
