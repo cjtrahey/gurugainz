@@ -48,3 +48,7 @@
     background: #ddd;
     color: black;
   }
+
+  .hide{
+    display: none
+  }

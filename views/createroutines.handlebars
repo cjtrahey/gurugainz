@@ -1,0 +1,21 @@
+<form class='form new-routine-form'>
+  <input class='form-input ' type='text' id='routine-name' name='routine-name' placeholder="routine name"/>
+  <textarea class='form-input form-control-lg' id='routine-body' name='routine-body' placeholder="routine Body"></textarea>
+  <button type='submit' class='btn btn-primary'>Create</button>
+</form>
+ 
+  <div class='routine-list'>
+    <h3>Current routines</h3>
+  {{#each routines as |routine|}}
+    <div class='row mb-2'>
+      <div class='col-md-8'>
+        <h4><a href='/routines/{{routine.id}}'>{{routine.name}}</a></h4>
+      </div>
+      <div class='col-md-4'>
+        <button class='btn btn-sm btn-danger' data-id='{{routine.id}}'>DELETE</button>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+</div>
+  <script src='/js/routines.js'></script>

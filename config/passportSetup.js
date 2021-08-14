@@ -2,7 +2,7 @@ const passport = require('passport');
 const GitHubStrategy = require('passport-github')
 
 // github strategy setup pulled from passport.js documentation
-var GitHubStrategy = require('passport-github').Strategy;
+var GitHubStrat= require('passport-github').Strategy;
 
 // acquiring the keys from a hidden location
 const keys = require('./keys');
