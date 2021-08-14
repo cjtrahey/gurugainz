@@ -1,5 +1,5 @@
-const Category = require('./category');
-const Exercise = require('./exercise');
+const Category = require('./Category');
+const Exercise = require('./Exercise');
 const User = require('./User');
 const Routine = require('./Routine')
 
