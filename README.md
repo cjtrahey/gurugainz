@@ -1,4 +1,4 @@
-# Welcome to Project One - "The PokeDex"
+# Welcome to Project Two - "Guru Gainz"
 
 
 <center>
